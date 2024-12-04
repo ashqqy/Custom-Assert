@@ -6,7 +6,7 @@
 // soft assert
 #define CustomWarning(expression, return_message) do                                                      \
 {                                                                                                         \
-    if (!(expression))                                                                                      \
+    if (!(expression))                                                                                    \
     {                                                                                                     \
         printf ("%s: %s:%d: Expression `%s' warning.\n", __FUNCTION__, __FILE__, __LINE__, #expression ); \
         return return_message;                                                                            \
