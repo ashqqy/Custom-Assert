@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+// TODO custom assert
 // soft assert
 #define CustomWarning(expression, return_message) do                                                      \
 {                                                                                                         \
