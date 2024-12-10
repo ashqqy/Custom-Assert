@@ -7,7 +7,7 @@
 // soft assert
 #define CustomWarning(expression, return_message) do                                                      \
 {                                                                                                         \
-    if (!expression)                                                                                      \
+    if (!(expression))                                                                                    \
     {                                                                                                     \
         printf ("%s: %s:%d: Expression `%s' warning.\n", __FUNCTION__, __FILE__, __LINE__, #expression ); \
         return return_message;                                                                            \
@@ -18,7 +18,7 @@ while (0)                                                                       
 // hard assert
 #define CustomAssert(expression) do                                                                       \
 {                                                                                                         \
-    if (!expression)                                                                                      \
+    if (!(expression))                                                                                    \
     {                                                                                                     \
         printf ("%s: %s:%d: Assertion `%s' failed.\n", __FUNCTION__, __FILE__, __LINE__, #expression );   \
         printf ("Program aborting\n");                                                                    \
