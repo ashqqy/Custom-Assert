@@ -22,7 +22,7 @@ while (0)                                                                       
     {                                                                                                     \
         printf ("%s: %s:%d: Assertion `%s' failed.\n", __FUNCTION__, __FILE__, __LINE__, #expression );   \
         printf ("Program aborting\n");                                                                    \
-        abort();                                                                                          \        \
+        abort();                                                                                          \
     }                                                                                                     \
 }                                                                                                         \
 while (0)                                                                                                 \
