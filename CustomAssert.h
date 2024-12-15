@@ -22,7 +22,7 @@ while (0)                                                                       
     {                                                                                                            \
         fprintf (stderr, "%s: %s:%d: Assertion `%s' failed.\n", __FUNCTION__, __FILE__, __LINE__, #expression);  \
         fprintf (stderr, "Program aborting\n");                                                                  \
-        exit();                                                                                                  \
+        exit(EXIT_FAILURE);                                                                                                  \
     }                                                                                                            \
 }                                                                                                                \
 while (0)                                                                                                        \
